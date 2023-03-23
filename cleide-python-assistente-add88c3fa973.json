@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cleide-python-assistente",
+  "private_key_id": "add88c3fa973d74aead04efc5b90c2d7f23ac8aa",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4c8xOgAhim+D4\nLhJGFOs1Xc2KV8gOfJ5wXKplCdwMUB0D01SpjwTxtiyoIjnABOvxTNvjH+VS5GA6\nvc0kmhVYIAyjSQKXR8ZdEZImp38a8Dm6XhhrWNq1s4y8BKwowZYk+u3yubc3IOmy\n4JUTuulvYfUM6s43MkFi+R4o7rIq8j/TQX7AMnZw79ibyXzWeopntlnljCBio4q9\nO4+P1ny83DzZQQ/i/sYnLmcaqoSRc39iVdMq7kIq/JUR8jhsgbV4V9SgTQPv8EKw\nVHlH8Fq5L+EMa1TTyQMqbwFpp+QqqGDoDOyCpoKi55lZjD7Oiqlq0gJmo7MmYZ99\nM82Bu1lFAgMBAAECggEAIPQLObEVDmzz5dLxT9T36ppeGMuzAaeQ9NkRVijLR+Xe\nMStF0l8rTnWyB73JnH0knAETvcGailMjwArdxh7DFnHvYBKwpE9d6I21kzNUeX8W\niS27Zh5DQLgZuhOJoGRpiyTLcxRr360BI4SNDa/UeaJCEfM3MVRIq0J/eWefrB05\n3guHm1V5FUnJLpGuid5xYJRhT5Fw3klZ9hDs7mgChGZKxVg/XnIhxGkpNlNfld5U\n2oqVudJbljAKsLMgtrRfAddakpvaZYBvezEb0ElatF28nJezKw/5CROATOTg0TyI\nhF3ExI7/3wMR79eoqGdrMTNa5H9uNcwAu653xhfP5wKBgQD+bMWl9cB9zohMZF9f\ndVFk3S3fJFVgpWPea7WC4ka69jD+/rerOh3TcylR8W50phpMNxNayZg1EfQ5mzUZ\nB8eb6VwNwmHghD2Q0ChFM4Mo38u2hlcAOkuiqAcaTxzxiXHcC1f+BJsjxibmOpG9\nEW+02uteJdzIRz1+ULaog+i6VwKBgQC5mCEYV8OuNocyehqlYuNv957F0QnJPs1A\nQVMVYjqV6v1tJ4gvnL5w+DHei0BIsi+FeDaD9aFHIAP5425TNHhhr0qROSZK46Oh\nbkooWg+opRfAFJL/GpMNr44f4IWChGjpOOGN1VflzzsZGUffyYtkJQ8qVEBN7HDl\nIUSanvY/wwKBgDhdcqAkxKNaeRmrdvGX9RNKaNoxm3SQz4I8DHdVl+PdnNcxKRGX\nC3qH3dSYjybqkZLm9LO9S6oeMyP7/ZRxA8jHtywZL0PlKBqH8xP5qIoKon/qXSXg\nxFbhsMkkU74y+/WK0dClxpTzVjTVLupbDYtcoJ439ySrm7T7PqwwpQN7AoGBAI5a\nnafqSXFq6bBR7/ZDL2hGakYY3IS74vsSIAQa4Az1vYTn+ZFrjLdh5/5mmNwpsEGT\nv1zgHuBLMkGNrKWtbVif93YEe9adXHkJ+1+QFMqqNtlh7o41d+3bZgwVTtKZdU7O\nDlOX/F+M4CuUNIj2MjCSLFuvW9NpM/7L0a83lnG5AoGAIUj5KuSXkVgjERSBjazB\nz3tPQnkaMjqGjHjAhfQLfzZ1dTF4o1Ga382Npcj9nTZ7zofZHoCO3CCbiprkbbag\nYZfxETEYKBWl5iUB2qh7TlMoVX0Xxi0rGW+3DvVHr1KrTE9afdI7iqeWipMDVCpD\n9sIcoqIzYMXSf6xOBHIsuZk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cleide@cleide-python-assistente.iam.gserviceaccount.com",
+  "client_id": "110306022135369759031",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cleide%40cleide-python-assistente.iam.gserviceaccount.com"
+}
