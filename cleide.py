@@ -1,10 +1,11 @@
 import speech_recognition as sr
+import os
+import openai
 from gtts import gTTS
 from playsound import playsound
-from requests import get
-from bs4 import BeautifulSoup
 from datetime import datetime
-import os
+from apikey import APIKEY
+openai.api_key = APIKEY
 
 ##### CONFIGURACOES #####
 hotword = 'cleide'
@@ -22,6 +23,7 @@ def monitora_audio():
             try:
                 trigger = microfone.recognize_google_cloud(audio, credentials_json=credenciais_google, language='pt-BR')
                 trigger = trigger.lower()
+                print(trigger)
                 if hotword in trigger:
                     print('Comando: ', trigger)
                     responde('feedback')
@@ -34,9 +36,11 @@ def monitora_audio():
             except sr.RequestError as e:
                 print("Could not request results from Google Cloud Speech service; {0}".format(e))
 
+
 def responde(resposta):
     path = 'audios/' + resposta + '.mp3'
     playsound(path)
+
 
 def cria_audio(audio):
     tts = gTTS(audio, lang='pt-br')
@@ -46,32 +50,26 @@ def cria_audio(audio):
     playsound(path)
     os.remove(path)
 
-def executa_comandos(trigger):
-    if 'notícias' in trigger:
-        ultimas_noticias()
 
-    if 'giro' in trigger:
-        cria_audio('O melhor Chapter do Giro é o contratação Gerente')
-        print('O melhor Chapter do Giro é o contratação Gerente')
+def executa_comandos(trigger):
+    response = aciona_gpt(trigger)
+    cria_audio(response)
 
 ## funcoes de comandos ###
-def ultimas_noticias():
-    site = get('https://news.google.com/rss?hl=pt-BR&gl=BR&ceid=BR:pt-419')
-    noticias = BeautifulSoup(site.text, 'html.parser')
 
-    for item in noticias.findAll('item')[:5]:
-        mensagem = item.title.text
-        index = 0
-        index = index + 1
-        print(mensagem)
-        cria_audio(mensagem)
-
+def aciona_gpt(trigger):
+    text = trigger.split(hotword)
+    output = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content":
+            text[1]}]
+    )
+    return output['choices'][0]['message']['content']
 
 
 def main():
     while True:
         monitora_audio()
 
-main()
 
-#ultimas_noticias()
+main()
